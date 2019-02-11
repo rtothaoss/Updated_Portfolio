@@ -1,257 +1,271 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>page-slider-js</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="assets/javascript/app.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="assets/javascript/app.js"></script>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    #slide1 {
+      /* background: linear-gradient(225deg, #ffc27d, #ff8e93); */
+      background: linear-gradient(#d2fcad, #22eaeb);
+    }
 
-    <style>
-        #slide1 {
-            /* background: linear-gradient(225deg, #ffc27d, #ff8e93); */
-            background: linear-gradient(#65cce1, #6365ec);
-        }
+    #slide2 {
+      background: linear-gradient(#f3defc, #63a3e6);
+    }
 
-        #slide2 {
-            background: linear-gradient(#f3defc, #63a3e6);
-        }
+    #slide3 {
+      /* background: linear-gradient(#d2fcad, #22eaeb); */
+      background: linear-gradient(225deg, #ffc27d, #ff8e93);
+    }
 
-        #slide3 {
-            background: linear-gradient(#E94057, #F27121);
-        }
+    #slide4 {
+      background: linear-gradient(#f0bed4, #a163f5);
+    }
 
-        #slide4 {
-            background: linear-gradient(#f0bed4, #a163f5);
-        }
+    #slide5 {
+      background: linear-gradient(#65cce1, #6365ec);
+    }
 
-        #slide5 {
-            /* background: linear-gradient(#65cce1, #6365ec); */
-            background: linear-gradient(225deg, #ffc27d, #ff8e93);
-        }
+    section>span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 7vw;
+      font-family: sans-serif;
+      text-transform: uppercase;
+      color: #fff;
+    }
 
-        section>span {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 7vw;
-            font-family: sans-serif;
-            text-transform: uppercase;
-            color: #fff;
-        }
-    </style>
+    #name {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 56px;
+    }
 
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 75%;
+    }
+
+    .kindaOpaque {
+      background-color: rgba(255, 255, 255, 0.2)
+    }
+
+    .opaque {
+      background-color: rgba(255, 255, 255, 0)
+    }
+
+    .portfolio {
+      min-height: 500px;
+    }
+
+    .portfolioJumbotron {
+      min-height: 500px;
+    }
+
+    p,
+    h1 {
+      color: white;
+    }
+  </style>
 </head>
 
 <body>
+  <div class="slides">
+    <section id="slide1">
+      <span>
 
-    <div class="slides">
+        <img src='assets/images/me.jpeg' alt='me and cosmo' style='border-radius: 100%; border: 2px solid white;'
+          class='center'>
 
-        <section id="slide1">
-            <span>
+        <h1 id='name'>Ross Carmack</h1>
 
-                <img src='assets/images/me.jpeg' alt='me and cosmo' style='border-radius: 100%; border: 2px solid white;' class='center'>
+      </span>
+    </section>
 
-                <h1 id='name'>Ross Carmack</h1>
+    <section id="slide2">
 
-            </span>
-        </section>
+      <div class="jumbotron jumbotron-fluid opaque">
+        <div class="container">
+          <h1 class="display-2" style='text-align: center; color: white;'>About Me</h1>
+          <br>
+          <br>
+          <p class="lead" style='font-size: 24px;'>My name is Ross Carmack and I've grown up using computers from a very
+            young age and
+            have always known that
+            I've wanted to do something in life related to technology. Along with technology I've grown up
+            around art.
+            My father owned an art gallery for 40 years and my mother has been an art teacher for 20+ years
+            at a
+            private school. My mother was always pushing to take me on trips to museums and I've been to a
+            few popular
+            ones like the Louvre in Paris, the Tate in London, and the Metropolitan in NYC.</p>
+          <br>
+          <p class="lead" style='font-size: 24px;'>Along with being an art collector I have a few other hobbies that
+            include: gaming,
+            sim-racing, and music
+            production. You might be asking yourself, "What is sim-racing?" and simply put it is just a more
+            accurate
+            depiction of real life racing in a video game setting. I take it pretty seriously even though I
+            am not that
+            great at it. However, something I am really good at is being an introvert but I am trying to
+            turn that
+            around. I am also a corgi dad if you haven't already noticed that from the picture above.
+            Hopefully after
+            you have read this whole bio you will want to learn more about me. You can contact me and ask me
+            whatever
+            you want.</p>
+        </div>
+      </div>
+    </section>
 
-        <section id="slide2">
-            <div class="jumbotron jumbotron-fluid opaque">
-                <div class="container">
-                    <h1 class="display-2" style='text-align: center; color: white;'>About Me</h1>
-                    <br>
-                    <br>
-                    <p class="lead" style='font-size: 24px;'>My name is Ross Carmack and I've grown up using computers from a very young age and
-                        have always known that
-                        I've wanted to do something in life related to technology. Along with technology I've grown up
-                        around art.
-                        My father owned an art gallery for 40 years and my mother has been an art teacher for 20+ years
-                        at a
-                        private school. My mother was always pushing to take me on trips to museums and I've been to a
-                        few popular
-                        ones like the Louvre in Paris, the Tate in London, and the Metropolitan in NYC.</p>
-                        <br>
-                    <p class="lead" style='font-size: 24px;'>Along with being an art collector I have a few other hobbies that include: gaming,
-                        sim-racing, and music
-                        production. You might be asking yourself, "What is sim-racing?" and simply put it is just a more
-                        accurate
-                        depiction of real life racing in a video game setting. I take it pretty seriously even though I
-                        am not that
-                        great at it. However, something I am really good at is being an introvert but I am trying to
-                        turn that
-                        around. I am also a corgi dad if you haven't already noticed that from the picture above.
-                        Hopefully after
-                        you have read this whole bio you will want to learn more about me. You can contact me and ask me
-                        whatever
-                        you want.</p>
-                </div>
-            </div>
+    <section id="slide3">
 
-        </section>
+      <div class="jumbotron jumbotron-fluid opaque">
+              <div class="container">
+                  <h1 class="display-2" style='text-align: center; margin-bottom: 30px;'>Projects</h1>
+                  
+                  <div class='row'>
+                  <div class="col col-lg-8">
+                  <h1 class='display-4'>FaceJam</h1>
 
-        <section id="slide3">
-            <div class="jumbotron jumbotron-fluid opaque">
-                <div class="container">
-                    <h1 class="display-2" style='text-align: center; margin-bottom: 30px;'>Projects</h1>
-                    
-                    <div class='row'>
-                    <div class="col col-lg-8">
-                    <h1 class='display-4'>FaceJam</h1>
-
-                    <p class='lead'>An app that allows the user to take a selfie and based upon their emotion a playlist
-                        will be pulled from spoify to match your emotion.</p>
-                    <br>
-                    <p class='lead'>Role: Javascript Engineer</p>
-                    <br>
-                    <p class='lead'>Tasked with:</p>
-                    <p class='lead'>Accessing the user's camera to produce a selfie.</p>
-                    <p class='lead'>Using technologies like Microsoft Face and Spotify API.</p>
-                    <p class='lead'>Using both API's in conjunction with eachother.</p>
-                    <br>
-                    <br>
-                    <button type="button" class="btn btn-outline-light">Deployed Page</button>
-                    <button type="button" class="btn btn-outline-light">FaceJam Github</button>
-                    
-                    
-                    </div>
-                    <div class="col col-lg-4">
-                <img src='assets/images/me.jpeg' alt='me and cosmo' style='border-radius: 100%;'>
-                </div>
-            
+                  <p class='lead'>An app that allows the user to take a selfie and based upon their emotion a playlist
+                      will be pulled from spoify to match your emotion.</p>
+                  <br>
+                  <p class='lead'>Role: Javascript Engineer</p>
+                  <br>
+                  <p class='lead'>Tasked with:</p>
+                  <p class='lead'>Accessing the user's camera to produce a selfie.</p>
+                  <p class='lead'>Using technologies like Microsoft Face and Spotify API.</p>
+                  <p class='lead'>Using both API's in conjunction with eachother.</p>
+                  <br>
+                  <br>
+                  <button type="button" class="btn btn-outline-light">Deployed Page</button>
+                  <button type="button" class="btn btn-outline-light">FaceJam Github</button>
+                  
+                  
+                  </div>
+                  <div class="col col-lg-4">
+              <img src='assets/images/me.jpeg' alt='me and cosmo' style='border-radius: 100%;'>
+              </div>
+          
+      </div>
+  </div>
+  </div>
+    </section>
+    
+    
+    <section id="slide4">
+      <div class="jumbotron jumbotron-fluid opaque" style='margin-bottom: 15px;'>
+        <div class="container">
+            <h1 class="display-2" style='text-align: center; color: white;'>Portfolio</h1>
         </div>
     </div>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide portfolio">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                
+                <div class="jumbotron jumbotron-fluid kindaOpaque portfolioJumbotron">
+                    <div class="container">
+                        <h1 class="display-4">Giftastic</h1>
+                        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space
+                            of its parent.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                
+                <div class="jumbotron jumbotron-fluid kindaOpaque portfolioJumbotron">
+                    <div class="container">
+                        <h1 class="display-4">90's Trivia</h1>
+                        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space
+                            of its parent.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+               
+                <div class="jumbotron jumbotron-fluid kindaOpaque portfolioJumbotron">
+                    <div class="container">
+                        <h1 class="display-4">Guess the Soundcloud Rapper</h1>
+                        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space
+                            of its parent.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>  
+    </section>
+    <section id="slide5">
+      <div class="jumbotron jumbotron-fluid opaque">
+        <div class="container">
+            <h1 class="display-2" style='text-align: center;'>Contact Me</h1>
+        </div>
     </div>
-
-
-        </section>
-
-        <section id="slide4">
-            <div class="jumbotron jumbotron-fluid opaque" style='margin-bottom: 15px;'>
-                <div class="container">
-                    <h1 class="display-2" style='text-align: center; color: white;'>Portfolio</h1>
-                </div>
-            </div>
-
-
-            <div id="carouselExampleIndicators" class="carousel slide portfolio" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <!-- <img class="d-block w-100" src="https://wallpaperplay.com/walls/full/f/d/0/22120.jpg" style='opacity: 0.5' alt="First slide"> -->
-                        <div class="jumbotron jumbotron-fluid kindaOpaque portfolioJumbotron">
-                            <div class="container">
-                                <h1 class="display-4">Giftastic</h1>
-                                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space
-                                    of its parent.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <!-- <img class="d-block w-100" src="https://wallpaperplay.com/walls/full/c/8/3/22121.jpg" alt="Second slide"> -->
-                        <div class="jumbotron jumbotron-fluid kindaOpaque portfolioJumbotron">
-                            <div class="container">
-                                <h1 class="display-4">90's Trivia</h1>
-                                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space
-                                    of its parent.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <!-- <img class="d-block w-100" src="https://wallpaperplay.com/walls/full/2/a/5/22122.jpg" alt="Third slide"> -->
-                        <div class="jumbotron jumbotron-fluid kindaOpaque portfolioJumbotron">
-                            <div class="container">
-                                <h1 class="display-4">Guess the Soundcloud Rapper</h1>
-                                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space
-                                    of its parent.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-
-        </section>
-
-        <section id="slide5">
-            
-            <div class="jumbotron jumbotron-fluid opaque">
-                <div class="container">
-                    <h1 class="display-2" style='text-align: center; margin-bottom: 30px;'>Contact Me</h1>
-                </div>
-            </div>
-            <div class="container main-container">
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="jumbotron kindaOpaque">
-                      <form>
-                          <div class="form-group">
-                            <label for="exampleFormControlInput1" style='color: white;' >Name</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
-                          </div>
-                          <div class="form-group">
-                            <label for="exampleFormControlInput1" style='color: white;'>Email address</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@gmail.com">
-                          </div>
-                          <div class="form-group">
-                              <label for="exampleFormControlTextarea1" style='color: white;'>Message</label>
-                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                            <button type="submit" class="btn" style='background: linear-gradient(225deg, #ffc27d, #ff8e93); color: white;'>Submit</button>
-                          </form>
-            
-                    </div>
+    <div class="container main-container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="jumbotron kindaOpaque">
+              <form>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1" style='color: white;' >Name</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
                   </div>
-                </div>
-              </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </section>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1" style='color: white;'>Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@gmail.com">
+                  </div>
+                  <div class="form-group">
+                      <label for="exampleFormControlTextarea1" style='color: white;'>Message</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn" style='background: linear-gradient(#65cce1, #6365ec); color: white;'>Submit</button>
+                  </form>
     
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
-
-    <script>
-        slider('.slides');
-    </script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <!-- <script src="assets/javascript/app.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script>
+    slider('.slides');
+  </script>
 </body>
 
 </html>
