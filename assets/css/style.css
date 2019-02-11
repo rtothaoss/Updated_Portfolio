@@ -67,3 +67,24 @@ body.slider__body {
 	margin-right: auto;
 	width: 75%;
   }
+
+  .kindaOpaque {
+	  background-color: rgba(255,255,255,0.2)
+  }
+
+  .opaque {
+	background-color: rgba(255,255,255,0)
+  }
+
+  .portfolio {
+	  min-height: 500px;
+  }
+
+  .portfolioJumbotron {
+	  min-height: 500px;
+  }
+
+  p,
+  h1 {
+	  color: white;
+  }
