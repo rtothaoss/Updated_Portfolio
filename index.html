@@ -14,7 +14,8 @@
 
     <style>
         #slide1 {
-            background: linear-gradient(225deg, #ffc27d, #ff8e93);
+            /* background: linear-gradient(225deg, #ffc27d, #ff8e93); */
+            background: linear-gradient(#65cce1, #6365ec);
         }
 
         #slide2 {
@@ -30,7 +31,8 @@
         }
 
         #slide5 {
-            background: linear-gradient(#65cce1, #6365ec);
+            /* background: linear-gradient(#65cce1, #6365ec); */
+            background: linear-gradient(225deg, #ffc27d, #ff8e93);
         }
 
         section>span {
@@ -54,7 +56,7 @@
         <section id="slide1">
             <span>
 
-                <img src='assets/images/me.jpeg' alt='me and cosmo' style='border-radius: 100%;' class='center'>
+                <img src='assets/images/me.jpeg' alt='me and cosmo' style='border-radius: 100%; border: 2px solid white;' class='center'>
 
                 <h1 id='name'>Ross Carmack</h1>
 
@@ -67,7 +69,7 @@
                     <h1 class="display-2" style='text-align: center; color: white;'>About Me</h1>
                     <br>
                     <br>
-                    <p class="lead">My name is Ross Carmack and I've grown up using computers from a very young age and
+                    <p class="lead" style='font-size: 24px;'>My name is Ross Carmack and I've grown up using computers from a very young age and
                         have always known that
                         I've wanted to do something in life related to technology. Along with technology I've grown up
                         around art.
@@ -76,7 +78,8 @@
                         private school. My mother was always pushing to take me on trips to museums and I've been to a
                         few popular
                         ones like the Louvre in Paris, the Tate in London, and the Metropolitan in NYC.</p>
-                    <p class="lead">Along with being an art collector I have a few other hobbies that include: gaming,
+                        <br>
+                    <p class="lead" style='font-size: 24px;'>Along with being an art collector I have a few other hobbies that include: gaming,
                         sim-racing, and music
                         production. You might be asking yourself, "What is sim-racing?" and simply put it is just a more
                         accurate
@@ -112,6 +115,10 @@
                     <p class='lead'>Accessing the user's camera to produce a selfie.</p>
                     <p class='lead'>Using technologies like Microsoft Face and Spotify API.</p>
                     <p class='lead'>Using both API's in conjunction with eachother.</p>
+                    <br>
+                    <br>
+                    <button type="button" class="btn btn-outline-light">Deployed Page</button>
+                    <button type="button" class="btn btn-outline-light">FaceJam Github</button>
                     
                     
                     </div>
@@ -127,7 +134,7 @@
         </section>
 
         <section id="slide4">
-            <div class="jumbotron jumbotron-fluid opaque">
+            <div class="jumbotron jumbotron-fluid opaque" style='margin-bottom: 15px;'>
                 <div class="container">
                     <h1 class="display-2" style='text-align: center; color: white;'>Portfolio</h1>
                 </div>
@@ -185,11 +192,51 @@
         </section>
 
         <section id="slide5">
-            <span>
-                Contact Me
-            </span>
+            
+            <div class="jumbotron jumbotron-fluid opaque">
+                <div class="container">
+                    <h1 class="display-2" style='text-align: center; margin-bottom: 30px;'>Contact Me</h1>
+                </div>
+            </div>
+            <div class="container main-container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="jumbotron kindaOpaque">
+                      <form>
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1" style='color: white;' >Name</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1" style='color: white;'>Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@gmail.com">
+                          </div>
+                          <div class="form-group">
+                              <label for="exampleFormControlTextarea1" style='color: white;'>Message</label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn" style='background: linear-gradient(225deg, #ffc27d, #ff8e93); color: white;'>Submit</button>
+                          </form>
+            
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
         </section>
-    </div>
+    
 
 
     <script>
