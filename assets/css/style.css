@@ -87,4 +87,9 @@ body.slider__body {
   p,
   h1 {
 	  color: white;
-  }
+	}
+	
+	.italic {
+		font-style: italic;
+		font-size: 24px;
+	}
