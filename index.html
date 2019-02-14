@@ -22,11 +22,13 @@
 
     #slide3 {
       /* background: linear-gradient(#d2fcad, #22eaeb); */
-      background: linear-gradient(225deg, #ffc27d, #ff8e93);
+      /* background: linear-gradient(225deg, #ffc27d, #ff8e93); */
+      background: linear-gradient(#f0bed4, #a163f5);
     }
 
     #slide4 {
-      background: linear-gradient(#f0bed4, #a163f5);
+      /* background: linear-gradient(#f0bed4, #a163f5); */
+      background: linear-gradient(225deg, #ffc27d, #ff8e93);
     }
 
     #slide5 {
@@ -83,14 +85,15 @@
 <body>
   <div class="slides">
     <section id="slide1">
-      <span>
-
-        <img src='assets/images/me.jpeg' alt='me and cosmo' style='border-radius: 100%; border: 2px solid white;'
-          class='center'>
+      <!-- <span> -->
+      <div class='landingPage'>
+        <img src='assets/images/me.jpeg' alt='me and cosmo' class='center selfie'>
 
         <h1 id='name'>Ross Carmack</h1>
-
-      </span>
+        <h3>Full Stack Web Developer</h3>
+      </div>
+      <!-- </span> -->
+      <!-- <span><p style='font-size: 12px;'>Full Stack Web Developer</p></span> -->
     </section>
 
     <section id="slide2">
@@ -125,6 +128,21 @@
             you have read this whole bio you will want to learn more about me. You can contact me and ask me
             whatever
             you want.</p>
+          <p class='lead'>Down below will be links to my resume, github, and LinkedIn. If you would like to contact me
+            please use the contact me form on the last page.</p>
+          <div class="dropdown show">
+            <a class="btn btn-outline-light btn-secondary" href="#" role="button" id="dropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style='margin-top: 10px;'>
+              Information
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item"
+                href="https://docs.google.com/document/d/1dA31UF3or9qkYagUmHN0H2_pJKdbCRJ808gnrZX4rmE/edit">Resume</a>
+              <a class="dropdown-item" href="https://github.com/rtothaoss">Github</a>
+              <a class="dropdown-item" href="https://www.linkedin.com/in/ross-carmack-246383171/">LinkedIn</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -150,13 +168,16 @@
               <p class='lead'>Using both API's in conjunction with eachother.</p>
               <br>
               <br>
-              <button type="button" class="btn btn-outline-light">Deployed Page</button>
-              <button type="button" class="btn btn-outline-light">FaceJam Github</button>
+              <a role="button" class="btn btn-outline-light" href="https://rtothaoss.github.io/Cyclosa/">Deployed
+                Page</a>
+              <a role="button" class="btn btn-outline-light" href="https://github.com/rtothaoss/Cyclosa/">FaceJam
+                Repo</a>
 
 
             </div>
             <div class="col col-lg-4">
-              <img src='assets/images/me.jpeg' alt='me and cosmo' style='border-radius: 100%;'>
+              <!-- <img src='assets/images/facejam.png' alt='me and cosmo' style='max-width: 400px; border: 2px solid white;'> -->
+              <a href='https://rtothaoss.github.io/Cyclosa/' target='_blank'><img src='assets/images/facejam.png' style='max-width: 400px; border: 2px solid white;' alt='facejam'></a>
             </div>
 
           </div>
@@ -173,7 +194,7 @@
       </div>
 
 
-      <div id="carouselExampleIndicators" class="carousel slide portfolio" data-interval='false' data-ride="" >
+      <div id="carouselExampleIndicators" class="carousel slide portfolio"  data-interval='false' data-ride="">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -184,57 +205,93 @@
 
             <div class="jumbotron jumbotron-fluid kindaOpaque portfolioJumbotron">
               <div class="container">
-                <h1 class="display-4">Giftastic</h1>
-                <p class="lead italic">App that allows the user to pull up gifs from giphy.com and search for more.</p>
-                <br>
-                <p class="lead">Used Giphy API to populate the page with gifs from their site.</p>
-                <p class="lead">Worked with technologies like AJAX calls, JSON, and jQuery to produce this product.</p>
-                <button type="button" class="btn btn-outline-light">Deployed Page</button>
-                <button type="button" class="btn btn-outline-light">Giftastic Github</button>
+                <div class='row'>
+                  <div class="col col-lg-8">
+                    <h1 class="display-4">Giftastic</h1>
+                    <p class="lead italic">App that allows the user to pull up gifs from giphy.com and search for more.
+                    </p>
+                    <br>
+                    <p class="lead">Used Giphy API to populate the page with gifs from their site.</p>
+                    <p class="lead">Worked with technologies like AJAX calls, JSON, and jQuery to produce this product.
+                    </p>
+                    <a role="button" class="btn btn-outline-light"
+                      href='https://rtothaoss.github.io/Giftastic/'>Deployed Page</a>
+                    <a role="button" class="btn btn-outline-light"
+                      href='https://github.com/rtothaoss/Giftastic'>Giftastic Repo</a>
+                  </div>
+                  <div class="col col-lg-2">
+                    <!-- <img src='assets/images/giftastic.png' alt='giftastic' href='https://rtothaoss.github.io/Giftastic/' style='max-width: 400px;'> -->
+                    <a href='https://rtothaoss.github.io/Giftastic/' target='_blank'><img src='assets/images/giftastic.png' style='max-width: 400px; border: 2px solid white;' alt='giftastic'></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+            <div class="carousel-item">
 
-            <div class="jumbotron jumbotron-fluid kindaOpaque portfolioJumbotron">
-              <div class="container">
-                <h1 class="display-4">90's Trivia</h1>
-                <p class="lead italic">A timed trivia game that asks the user questions about the 90's.</p>
-                <br>
-                <p class="lead">Used DOM manipulation via jQuery throughout the app.</p>
-                <p class="lead">Made a timer function in javascript</p>
-                <p class="lead">Came up with logic to denote wether to user had answered the questions correctly or
-                  incorrectly along with unanswered questions being logged.</p>
-                  <button type="button" class="btn btn-outline-light">Deployed Page</button>
-                  <button type="button" class="btn btn-outline-light">Trivia Github</button>
+              <div class="jumbotron jumbotron-fluid kindaOpaque portfolioJumbotron">
+                <div class="container">
+                  <div class='row'>
+                    <div class="col col-lg-8">
+                      <h1 class="display-4">90's Trivia</h1>
+                      <p class="lead italic">A timed trivia game that asks the user questions about the 90's.</p>
+                      <br>
+                      <p class="lead">Used DOM manipulation via jQuery throughout the app.</p>
+                      <p class="lead">Made a timer function in javascript</p>
+                      <p class="lead">Came up with logic to denote wether to user had answered the questions correctly
+                        or
+                        incorrectly along with unanswered questions being logged.</p>
+                      <a role="button" class="btn btn-outline-light"
+                        href='https://rtothaoss.github.io/TriviaGame/'>Deployed Page</a>
+                      <a role="button" class="btn btn-outline-light"
+                        href='https://github.com/rtothaoss/TriviaGame'>Trivia
+                        Repo</a>
+                    </div>
+                    <div class="col col-lg-2">
+                      <!-- <img src='assets/images/trivia.png' alt='trivia' style='max-width: 400px;'> -->
+                      <a href='https://rtothaoss.github.io/TriviaGame/' target='_blank'><img src='assets/images/trivia.png' style='max-width: 400px; border: 2px solid white;' alt='trivia'></a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="carousel-item">
+            <div class="carousel-item">
 
-            <div class="jumbotron jumbotron-fluid kindaOpaque portfolioJumbotron">
-              <div class="container">
-                <h1 class="display-4">Train Scheduler</h1>
-                <p class="lead italic">An app with DART rail train schedules that are stored in firebase.</p>
-                <br>
-                <p class="lead">Used Firebase to have a database that would always update the page.</p>
-                <p class="lead">Worked with Moment.js to give the user accurate and up to date times.</p>
-                <p class="lead">Gave the user the ability to add in their own trains into the database.</p>
-                <button type="button" class="btn btn-outline-light">Deployed Page</button>
-                  <button type="button" class="btn btn-outline-light">Train Scheduler Github</button>
+              <div class="jumbotron jumbotron-fluid kindaOpaque portfolioJumbotron">
+                <div class="container">
+                  <div class='row'>
+                    <div class="col col-lg-8">
+                      <h1 class="display-4">Train Scheduler</h1>
+                      <p class="lead italic">An app with DART rail train schedules that are stored in firebase.</p>
+                      <br>
+                      <p class="lead">Used Firebase to have a database that would always update the page.</p>
+                      <p class="lead">Worked with Moment.js to give the user accurate and up to date times.</p>
+                      <p class="lead">Gave the user the ability to add in their own trains into the database.</p>
+                      <a role="button" class="btn btn-outline-light"
+                        href='https://rtothaoss.github.io/train_scheduler/'>Deployed Page</a>
+                      <a role="button" class="btn btn-outline-light"
+                        href='https://github.com/rtothaoss/train_scheduler'>Train Scheduler Repo</a>
+                    </div>
+                    <div class="col col-lg-2">
+                      <!-- <img src='assets/images/train.png' alt='train' style='max-width: 400px;'> -->
+                      <a href='https://rtothaoss.github.io/train_scheduler/' target='_blank'><img src='assets/images/train.png' style='max-width: 400px; border: 2px solid white;' alt='train'></a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
+      
     </section>
     <section id="slide5">
       <div class="jumbotron jumbotron-fluid opaque">
@@ -249,7 +306,7 @@
               <form>
                 <div class="form-group">
                   <label for="exampleFormControlInput1" style='color: white;'>Name</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
+                  <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlInput1" style='color: white;'>Email address</label>
@@ -260,8 +317,7 @@
                   <label for="exampleFormControlTextarea1" style='color: white;'>Message</label>
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-                <button type="submit" class="btn"
-                  style='background: linear-gradient(#65cce1, #6365ec); color: white;'>Submit</button>
+                <button type="submit" class="btn btn-outline-light">Submit</button>
               </form>
 
             </div>
