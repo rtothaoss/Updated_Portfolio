@@ -109,3 +109,21 @@ body.slider__body {
 		position: relative;
 		top: 250px;
 	}
+
+
+	/* @media screen and (max-width: 980px) {
+
+	}
+
+	@media screen and (max-width: 768px) {
+		.lead {
+			font-size: 18px;
+		}
+	}
+
+	@media screen and (max-width: 640px) {
+		p.lead {
+			font-size: 10px;
+		}
+	} */
+
