@@ -7,6 +7,7 @@
   <title>page-slider-js</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
   <script src="assets/javascript/app.js"></script>
   <link rel="stylesheet" href="assets/css/style.css">
 
@@ -103,34 +104,51 @@
           <h1 class="display-2" style='text-align: center; color: white;'>About Me</h1>
           <br>
           <br>
-          <p class="lead" style='font-size: 24px;'>My name is Ross Carmack and I've grown up using computers from a very
-            young age and
-            have always known that
-            I've wanted to do something in life related to technology. Along with technology I've grown up
-            around art.
-            My father owned an art gallery for 40 years and my mother has been an art teacher for 20+ years
-            at a
-            private school. My mother was always pushing to take me on trips to museums and I've been to a
-            few popular
-            ones like the Louvre in Paris, the Tate in London, and the Metropolitan in NYC.</p>
-          <br>
-          <p class="lead" style='font-size: 24px;'>Along with being an art collector I have a few other hobbies that
-            include: gaming,
-            sim-racing, and music
-            production. You might be asking yourself, "What is sim-racing?" and simply put it is just a more
-            accurate
-            depiction of real life racing in a video game setting. I take it pretty seriously even though I
-            am not that
-            great at it. However, something I am really good at is being an introvert but I am trying to
-            turn that
-            around. I am also a corgi dad if you haven't already noticed that from the picture above.
-            Hopefully after
-            you have read this whole bio you will want to learn more about me. You can contact me and ask me
-            whatever
-            you want.</p>
-          <p class='lead'>Down below will be links to my resume, github, and LinkedIn. If you would like to contact me
-            please use the contact me form on the last page.</p>
-          <div class="dropdown show">
+          <div class='container'>
+            <div class='row'>
+              <div class="col col-lg-8">
+                <p class="lead" style='font-size: 22px;'>My name is Ross Carmack and I've grown up using computers from
+                  a very
+                  young age and
+                  have always known that
+                  I've wanted to do something in life related to technology. Along with technology I've grown up
+                  around art.
+                  My father owned an art gallery for 40 years and my mother has been an art teacher for 20+ years
+                  at a
+                  private school. My mother was always pushing to take me on trips to museums and I've been to a
+                  few popular
+                  ones like the Louvre in Paris, the Tate in London, and the Metropolitan in NYC.</p>
+                <br>
+                <p class="lead" style='font-size: 22px;'>Along with being an art collector I have a few other hobbies
+                  that
+                  include: gaming,
+                  sim-racing, and music
+                  production. You might be asking yourself, "What is sim-racing?" and simply put it is just a more
+                  accurate
+                  depiction of real life racing in a video game setting. I take it pretty seriously even though I
+                  am not that
+                  great at it. However, something I am really good at is being an introvert but I am trying to
+                  turn that
+                  around. I am also a corgi dad if you haven't already noticed that from the picture above.
+                  Hopefully after
+                  you have read this whole bio you will want to learn more about me. You can contact me and ask me
+                  whatever
+                  you want.</p>
+              </div>
+              <div class="col col-lg-4">
+                <div class="jumbotron kindaOpaque">
+                  <h1 class="display-4">Information</h1>
+                  <hr class="my-4">
+                  <p class='lead'>E-mail: carmackbooking@gmail.com</p>
+                  <p class='lead'>Phone Number: 214-284-6049</p>
+                  <a role="button" class="btn btn-outline-light"
+                    href="https://docs.google.com/document/d/1dA31UF3or9qkYagUmHN0H2_pJKdbCRJ808gnrZX4rmE/edit">Resume</a>
+                  <a role="button" class="btn btn-outline-light" href="https://github.com/rtothaoss">Github</a>
+                  <a role="button" class="btn btn-outline-light"
+                    href="https://www.linkedin.com/in/ross-carmack-246383171/">LinkedIn</a>
+                </div>
+              </div>
+              <!-- <div class="dropdown show">
             <a class="btn btn-outline-light btn-secondary" href="#" role="button" id="dropdownMenuLink"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style='margin-top: 10px;'>
               Information
@@ -141,6 +159,8 @@
                 href="https://docs.google.com/document/d/1dA31UF3or9qkYagUmHN0H2_pJKdbCRJ808gnrZX4rmE/edit">Resume</a>
               <a class="dropdown-item" href="https://github.com/rtothaoss">Github</a>
               <a class="dropdown-item" href="https://www.linkedin.com/in/ross-carmack-246383171/">LinkedIn</a>
+            </div>
+            </div> -->
             </div>
           </div>
         </div>
@@ -157,7 +177,7 @@
             <div class="col col-lg-8">
               <h1 class='display-4'>FaceJam</h1>
 
-              <p class='lead'>An app that allows the user to take a selfie and based upon their emotion a playlist
+              <p class='lead italic'>An app that allows the user to take a selfie and based upon their emotion a playlist
                 will be pulled from spoify to match your emotion.</p>
               <br>
               <p class='lead'>Role: Javascript Developer</p>
@@ -177,7 +197,8 @@
             </div>
             <div class="col col-lg-4">
               <!-- <img src='assets/images/facejam.png' alt='me and cosmo' style='max-width: 400px; border: 2px solid white;'> -->
-              <a href='https://rtothaoss.github.io/Cyclosa/' target='_blank'><img src='assets/images/facejam.png' style='max-width: 400px; border: 2px solid white;' alt='facejam'></a>
+              <a href='https://rtothaoss.github.io/Cyclosa/' target='_blank'><img src='assets/images/facejam.png'
+                  style='max-width: 400px; border: 2px solid white;' alt='facejam'></a>
             </div>
 
           </div>
@@ -194,7 +215,7 @@
       </div>
 
 
-      <div id="carouselExampleIndicators" class="carousel slide portfolio"  data-interval='false' data-ride="">
+      <div id="carouselExampleIndicators" class="carousel slide portfolio" data-interval='false' data-ride="">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -221,77 +242,82 @@
                   </div>
                   <div class="col col-lg-2">
                     <!-- <img src='assets/images/giftastic.png' alt='giftastic' href='https://rtothaoss.github.io/Giftastic/' style='max-width: 400px;'> -->
-                    <a href='https://rtothaoss.github.io/Giftastic/' target='_blank'><img src='assets/images/giftastic.png' style='max-width: 400px; border: 2px solid white;' alt='giftastic'></a>
+                    <a href='https://rtothaoss.github.io/Giftastic/' target='_blank'><img
+                        src='assets/images/giftastic.png' style='max-width: 400px; border: 2px solid white;'
+                        alt='giftastic'></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-            <div class="carousel-item">
+          <div class="carousel-item">
 
-              <div class="jumbotron jumbotron-fluid kindaOpaque portfolioJumbotron">
-                <div class="container">
-                  <div class='row'>
-                    <div class="col col-lg-8">
-                      <h1 class="display-4">90's Trivia</h1>
-                      <p class="lead italic">A timed trivia game that asks the user questions about the 90's.</p>
-                      <br>
-                      <p class="lead">Used DOM manipulation via jQuery throughout the app.</p>
-                      <p class="lead">Made a timer function in javascript</p>
-                      <p class="lead">Came up with logic to denote wether to user had answered the questions correctly
-                        or
-                        incorrectly along with unanswered questions being logged.</p>
-                      <a role="button" class="btn btn-outline-light"
-                        href='https://rtothaoss.github.io/TriviaGame/'>Deployed Page</a>
-                      <a role="button" class="btn btn-outline-light"
-                        href='https://github.com/rtothaoss/TriviaGame'>Trivia
-                        Repo</a>
-                    </div>
-                    <div class="col col-lg-2">
-                      <!-- <img src='assets/images/trivia.png' alt='trivia' style='max-width: 400px;'> -->
-                      <a href='https://rtothaoss.github.io/TriviaGame/' target='_blank'><img src='assets/images/trivia.png' style='max-width: 400px; border: 2px solid white;' alt='trivia'></a>
-                    </div>
+            <div class="jumbotron jumbotron-fluid kindaOpaque portfolioJumbotron">
+              <div class="container">
+                <div class='row'>
+                  <div class="col col-lg-8">
+                    <h1 class="display-4">90's Trivia</h1>
+                    <p class="lead italic">A timed trivia game that asks the user questions about the 90's.</p>
+                    <br>
+                    <p class="lead">Used DOM manipulation via jQuery throughout the app.</p>
+                    <p class="lead">Made a timer function in javascript</p>
+                    <p class="lead">Came up with logic to denote wether to user had answered the questions correctly
+                      or
+                      incorrectly along with unanswered questions being logged.</p>
+                    <a role="button" class="btn btn-outline-light"
+                      href='https://rtothaoss.github.io/TriviaGame/'>Deployed Page</a>
+                    <a role="button" class="btn btn-outline-light" href='https://github.com/rtothaoss/TriviaGame'>Trivia
+                      Repo</a>
+                  </div>
+                  <div class="col col-lg-2">
+                    <!-- <img src='assets/images/trivia.png' alt='trivia' style='max-width: 400px;'> -->
+                    <a href='https://rtothaoss.github.io/TriviaGame/' target='_blank'><img
+                        src='assets/images/trivia.png' style='max-width: 400px; border: 2px solid white;'
+                        alt='trivia'></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
-
-              <div class="jumbotron jumbotron-fluid kindaOpaque portfolioJumbotron">
-                <div class="container">
-                  <div class='row'>
-                    <div class="col col-lg-8">
-                      <h1 class="display-4">Train Scheduler</h1>
-                      <p class="lead italic">An app with DART rail train schedules that are stored in firebase.</p>
-                      <br>
-                      <p class="lead">Used Firebase to have a database that would always update the page.</p>
-                      <p class="lead">Worked with Moment.js to give the user accurate and up to date times.</p>
-                      <p class="lead">Gave the user the ability to add in their own trains into the database.</p>
-                      <a role="button" class="btn btn-outline-light"
-                        href='https://rtothaoss.github.io/train_scheduler/'>Deployed Page</a>
-                      <a role="button" class="btn btn-outline-light"
-                        href='https://github.com/rtothaoss/train_scheduler'>Train Scheduler Repo</a>
-                    </div>
-                    <div class="col col-lg-2">
-                      <!-- <img src='assets/images/train.png' alt='train' style='max-width: 400px;'> -->
-                      <a href='https://rtothaoss.github.io/train_scheduler/' target='_blank'><img src='assets/images/train.png' style='max-width: 400px; border: 2px solid white;' alt='train'></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
+          <div class="carousel-item">
+
+            <div class="jumbotron jumbotron-fluid kindaOpaque portfolioJumbotron">
+              <div class="container">
+                <div class='row'>
+                  <div class="col col-lg-8">
+                    <h1 class="display-4">Train Scheduler</h1>
+                    <p class="lead italic">An app with DART rail train schedules that are stored in firebase.</p>
+                    <br>
+                    <p class="lead">Used Firebase to have a database that would always update the page.</p>
+                    <p class="lead">Worked with Moment.js to give the user accurate and up to date times.</p>
+                    <p class="lead">Gave the user the ability to add in their own trains into the database.</p>
+                    <a role="button" class="btn btn-outline-light"
+                      href='https://rtothaoss.github.io/train_scheduler/'>Deployed Page</a>
+                    <a role="button" class="btn btn-outline-light"
+                      href='https://github.com/rtothaoss/train_scheduler'>Train Scheduler Repo</a>
+                  </div>
+                  <div class="col col-lg-2">
+                    <!-- <img src='assets/images/train.png' alt='train' style='max-width: 400px;'> -->
+                    <a href='https://rtothaoss.github.io/train_scheduler/' target='_blank'><img
+                        src='assets/images/train.png' style='max-width: 400px; border: 2px solid white;'
+                        alt='train'></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-      
+      </div>
+
     </section>
     <section id="slide5">
       <div class="jumbotron jumbotron-fluid opaque">
@@ -302,7 +328,7 @@
       <div class="container main-container">
         <div class="row">
           <div class="col-md-12">
-            <div class="jumbotron kindaOpaque">
+            <div class="jumbotron kindaOpaque" >
               <form>
                 <div class="form-group">
                   <label for="exampleFormControlInput1" style='color: white;'>Name</label>
@@ -310,14 +336,15 @@
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlInput1" style='color: white;'>Email address</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1"
+                  <input type="email" class="form-control" id="exampleFormControlInput2"
                     placeholder="example@gmail.com">
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlTextarea1" style='color: white;'>Message</label>
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-                <button type="submit" class="btn btn-outline-light">Submit</button>
+
+                <a role='button' id='submitBtn' class="btn btn-outline-light" style='color: white'>Submit</a>
               </form>
 
             </div>
@@ -336,6 +363,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+
+    <script src="assets/javascript/firebase.js"></script>
+
+
   <script>
     slider('.slides');
   </script>
