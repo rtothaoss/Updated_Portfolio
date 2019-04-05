@@ -127,3 +127,11 @@ body.slider__body {
 		}
 	} */
 
+	#informationStyle {
+		font-size: 30px;
+	}
+
+	#santeImg {
+		max-height: 500px;
+		max-width: 500px
+	}
