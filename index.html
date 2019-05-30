@@ -114,11 +114,9 @@
                     around art.
                     My father owned an art gallery for 40 years and my mother has been an art teacher for 20+ years
                     at a
-                    private school. My mother was always pushing to take me on trips to museums and I've been to a
-                    few popular
-                    ones like the Louvre in Paris, the Tate in London, and the Metropolitan in NYC.</p>
-                  <br>
-                  <p class="lead" style='font-size: 22px;'>Along with being an art collector I have a few other hobbies
+                    private school. </p>
+                    
+                    <p class="lead" style='font-size: 22px;'>Along with being an art collector I have a few other hobbies
                     that
                     include: gaming,
                     sim-racing, and music
@@ -130,9 +128,7 @@
                     turn that
                     around. I am also a corgi dad if you haven't already noticed that from the picture above.
                     Hopefully after
-                    you have read this whole bio you will want to learn more about me. You can contact me and ask me
-                    whatever
-                    you want.</p>
+                    you have read this whole bio you will want to learn more about me. Scroll down to the last page and you can contact me via that form.</p>
                 </div>
                 <div class="col col-lg-4">
                   <div class="jumbotron jumbotron-fluid kindaOpaque">
@@ -140,7 +136,7 @@
                     <div class='container'>
                       <hr class="my-4">
                       <a role="button" class="btn btn-outline-light" style='margin-left: 10px;'
-                        href="https://docs.google.com/document/d/1dA31UF3or9qkYagUmHN0H2_pJKdbCRJ808gnrZX4rmE/edit">Resume</a>
+                        href="https://docs.google.com/document/d/1uyHLkbsxwbmcQymMYJIQ8Z-X6wqaOZ5_U4YcC83A0iE/edit?usp=sharing">Resume</a>
                       <a role="button" class="btn btn-outline-light" href="https://github.com/rtothaoss"
                         style='margin-left: 10px;'>Github</a>
                       <a role="button" class="btn btn-outline-light" style='margin-left: 10px;'
@@ -167,9 +163,39 @@
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
+            <div class="jumbotron jumbotron-fluid kindaOpaque portfolioJumbotron">
+              <div class="container">
+                <div class='row'>
+                  <div class="col col-lg-8">
+                    <h1 class='display-4'>Supbot</h1>
+                    <p class='lead italic'>A MERN stack app that allows the user to purchase items from Supremes website the day they drop with help from a bot.</p>
+                    <br>
+                    <p class='lead'>Role: Lead Developer</p>
+                    <br>
+                    <p class='lead'>Tasked with:</p>
+                    <p class='lead'>Scraping drop information with Cheerio and displaying that information for the user to interact with.</p>
+                    <p class='lead'>Refreshing drop information every hour through the use of CRON so that droplists were always up to date.</p>
+                    <p class='lead'>Creating a bot with Puppeteer.js that would buy the items the user had picked out.</p>
+                    <br>
+                    
+                    <a role="button" class="btn btn-outline-light" href="https://supbot123.herokuapp.com/">Deployed
+                      Page</a>
+                    <a role="button" class="btn btn-outline-light" href="https://github.com/rtothaoss/SupBot">Supbot
+                      Repo</a>
+                  </div>
+                  <div class="col col-lg-4">
+                    <a href='https://github.com/rtothaoss/SupBot' target='_blank'><img src='assets/images/supbot.gif'
+                        style='border: 2px solid white; margin-top: 50px;' class='img-fluid' alt='facejam'></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
             <div class="jumbotron jumbotron-fluid kindaOpaque portfolioJumbotron">
               <div class="container">
                 <div class='row'>
@@ -201,7 +227,6 @@
               </div>
             </div>
           </div>
-
           <div class="carousel-item">
             <div class="jumbotron jumbotron-fluid kindaOpaque portfolioJumbotron">
               <div class="container">
@@ -591,29 +616,25 @@
             <div class='row'>
               <div class="col col-lg-8">
 
-                <form>
+                <form action="https://formspree.io/carmackbooking@gmail.com" method="POST">
                   <div class="form-group">
                     <label for="exampleFormControlInput1" style='color: white;'>Name</label>
-                    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
+                    <input type="text" name='name' class="form-control" id="exampleFormControlInput1" placeholder="John Doe">
                   </div>
                   <div class="form-group">
                     <label for="exampleFormControlInput1" style='color: white;'>Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput2"
+                    <input type="email" name='_replyto' class="form-control" id="exampleFormControlInput2"
                       placeholder="example@gmail.com">
                   </div>
                   <div class="form-group">
                     <label for="exampleFormControlTextarea1" style='color: white;'>Message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea type='text' name='text' class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>
 
-                  <a role='button' id='submitBtn' class="btn btn-outline-light" style='color: white'>Submit</a>
+                  <a role='button' id='submitBtn' type='submit' value='Send' class="btn btn-outline-light" style='color: white'>Submit</a>
                 </form>
               </div>
               <div class='col-lg-4'>
-
-                <p class='lead' style='margin-left: 20px; font-size: 24px; font-weight: bold; margin-top: 15px'>E-mail:
-                </p>
-                <p class='lead' style='margin-left: 20px;'>carmackbooking@gmail.com</p>
                 <p class='lead' style='margin-left: 20px; font-size: 24px; font-weight: bold;'>Phone Number:</p>
                 <p class='lead' style='margin-left: 20px;'>214-284-6049</p>
                 <p class='lead' style='margin-left: 20px; font-size: 24px; font-weight: bold;'>Location:</p>
